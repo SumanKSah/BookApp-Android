@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9BCD5CE"
+    tools:context=".activity.DescriptionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarDescription"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_below="@id/toolBarDescription"
+            android:id="@+id/descriptionCardView"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/descriptionLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgDescriptionBook"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:contentDescription="Book Image"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/book_app_icon_web" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:id="@+id/txtDescriptionBookName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="List Item"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDescriptionAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDescriptionBookName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="8dp"
+                        android:text="Author" />
+
+                    <TextView
+                        android:id="@+id/txtDashBoardRecyclerPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDescriptionAuthor"
+                        android:padding="10dp"
+                        android:text="Rs. 240"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtDescriptionRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="4.5"
+                    android:textColor="#ECE938"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableLeftCompat="@drawable/ic_rating" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/btnAddToFavourite"
+        android:layout_below="@id/descriptionCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDescriptionAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_below="@+id/txtDescriptionAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="@string/dummy_description"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btnAddToFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_favourite"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9BCD5CE"
+    tools:context=".fragments.FragmentDashboard">
+
+    <!-- used this during the development of multiple fragments.
+    <TextView
+        android:id="@+id/txtDashBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboardFragment"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"
+        android:layout_marginStart="5dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"/> -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+      <!--  android:layout_below="@id/txtDashBoard"-->
+
+    <!-- This was a check Button, only for checking the network connectivity.
+    <Button
+        android:id="@+id/btnCheckNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5E5C61"
+        android:text="Check Network"
+        android:textColor="@color/white"/> -->
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressLayout"
+            android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
+
+<!--
+       This Syntax is for making a Progress Bar in Different layout and we Can also color
+       the background according to our requirement and make Half loaded screen hidden from the User.
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressLayout"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressLayout"
+            android:layout_centerInParent="true"/>
+       </RelativeLayout>-->
