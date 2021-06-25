@@ -10,6 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBarDescription"
         android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize"/>
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
-            android:elevation="5dp">
+        app:cardElevation="0dp">
 
 
             <LinearLayout
@@ -126,11 +127,13 @@
                 android:textSize="18sp"
                 android:textColor="@color/black" />
             <TextView
+                android:id="@+id/descriptionDetail"
                 android:layout_below="@+id/txtDescriptionAbout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:textAppearance="?android:textAppearanceSmall"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
                 android:text="@string/dummy_description"
                 android:textColor="@color/black"/>
 
@@ -143,9 +146,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_to_favourite"
+        android:textColor="@color/white"
+        android:textSize="17sp"
         android:background="@color/colorPrimary"
         android:layout_alignParentBottom="true"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/progressBarDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
