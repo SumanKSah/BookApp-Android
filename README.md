@@ -10,7 +10,23 @@ Picasso : for loading image into the ImageView.
 *************WORK IN PROGRESS*************
 
 Task TODO:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Favourite Book fragment.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Profile and About App fragment.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Favourite Book fragment. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Profile and About App fragment. <br /><br />
+
+### Screenshots
+
+<table>
+  <tr>
+    <td>Navigation Drawer</td>
+     <td>Dashboard Page</td>
+     <td>Description Page</td>
+  </tr>
+  <tr>
+    <td><img src="Images/NavigationDrawer.png" width=270 ></td>
+    <td><img src="Images/DashboardFragment.png" width=270 ></td>
+    <td><img src="Images/DescriptionActivity.png" width=270 ></td>
+  </tr>
+ </table>
+ 
 
 
