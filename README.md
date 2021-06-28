@@ -1,6 +1,6 @@
 # BookApp-Android
 
-This is a Demo of Book app which will fetch book data from a server and show to the Client device in an organized and attractive manner.
+This is a Demo of the Book app which will fetch book data from a server and show it on the client device in an organized and attractive manner.
 
 External Libraries Used: 
 
