@@ -3,14 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E9BCD5CE"
     tools:context=".FavouriteFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/favLayoutProgressBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/txtFavourite_fragment"
-        android:textSize="20sp"
-        android:padding="10dp"/>
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/favProgressBar"/>
+    </RelativeLayout>
 
 </RelativeLayout>
